@@ -1,0 +1,213 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  background-color: #4e4a4a;
+}
+
+.nav_container {
+  width: 100%;
+  height: 100px;
+  background-color: #eae2d1;
+  z-index: 1000;
+}
+
+.nav_container__sub {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+  height: 50px;
+  padding: 0%;
+  object-fit: contain;
+}
+
+.nav_container__menu-icon {
+  font-size: 40px;
+  padding-right: 40px;
+}
+
+.nav_container__list {
+  position: absolute;
+  width: 100vw;
+  height: 70vh;
+  top: 100px;
+  left: -100vw;
+  padding-top: 20px;
+  background-color: #4e4a4a;
+  transition: all 1s ease;
+  z-index: 100;
+}
+.nav_container__list-item {
+  padding: 30px;
+  list-style: none;
+}
+
+.nav_container__list-show {
+  left: 0px;
+}
+.nav_container__list-remove {
+  left: -100vw;
+}
+
+.banner_section {
+  width: 100%;
+  height: 50vh;
+}
+
+.banner_section__background {
+  width: 100%;
+  height: 100%;
+  background-image: url("/photos/sunset_in_blankenberge.jpg");
+  background-repeat: no-repeat;
+  background-size: 1920px 1080px;
+}
+
+.portfolio_section {
+  width: 100%;
+  display: none;
+}
+
+.portfolio_section__sub_container {
+  width: 100%;
+  margin: 40px 0px;
+}
+
+.portfolio_section__content_paragraph {
+  color: white;
+}
+
+.portfolio_section__title_header {
+  color: white;
+}
+
+.title_section {
+  width: 100%;
+  margin: 2rem;
+}
+
+.title_section__sub {
+  width: 80%;
+}
+
+.photography_section {
+  width: 100%;
+}
+
+.photography_section__sub {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.photography_section__item {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.photography_section__photos {
+  width: 100%;
+}
+
+.photography_section__link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  transform: translate(-50%, 50%);
+  z-index: 3px;
+}
+
+.photography_section__link::first-letter {
+  text-transform: capitalize;
+}
+
+.footer_section {
+  width: 100%;
+  height: 100px;
+  background-color: #eae2d1;
+}
+
+@media only screen and (min-width: 600px) {
+  .nav_container__menu-icon {
+    display: none;
+  }
+
+  .nav_container__list {
+    position: static;
+    width: auto;
+    height: auto;
+    min-height: auto;
+    background-color: transparent;
+    display: flex;
+  }
+
+  .nav_container__sub {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .portfolio_section {
+    width: 100%;
+    margin: 40px 0px;
+    display: block;
+  }
+
+  .portfolio_section__sub_container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+  }
+
+  .title_section__sub {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .photography_section {
+    width: 100%;
+  }
+
+  .photography_section__sub {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .portfolio_section__item {
+    width: 50%;
+    background-color: black;
+  }
+
+  .portfolio_section__title {
+    width: 30%;
+    padding: 2rem;
+  }
+  .portfolio_section__title_photo {
+    width: 100%;
+    background-color: red;
+  }
+
+  .portfolio_section__content {
+    width: 50%;
+    padding: 2rem;
+  }
+}
